@@ -39,8 +39,8 @@ document.write("</a>");
 	This file uses CSS filtering methods to fix various
 	layout bugs.
 
-	Each of the following three imported files is a 
-	separate, browser-specific CSS file that keeps all 
+	Each of the following three imported files is a
+	separate, browser-specific CSS file that keeps all
 	hacks out of the main style sheet.
 
 	Over time, as supporting these browsers no longer
@@ -50,16 +50,16 @@ document.write("</a>");
 
 */
 
-/* 
-  fix ie6 "peekaboo bug" using the "holly hack". 
+/*
+  fix ie6 "peekaboo bug" using the "holly hack".
   Note, this style only gets applied to ie6
 */
 * html .wrapper {
   height: 0.1%;
 }
 
-/* 
- * IE5 mac - overrides the IE/Win hack 
+/*
+ * IE5 mac - overrides the IE/Win hack
  */
 
 /*\\*//*/
@@ -71,7 +71,7 @@ document.write("</a>");
 /**/
 
 
-/* 
+/*
  * IE5/Win-specific CSS -ensures #container wraps all content on window resize
  */
 
@@ -109,20 +109,20 @@ body {
   <script src="http://www.protonotes.com/js/protonotes.js" type="text/javascript"></script>
 	<script type="text/javascript">
 	var groupnumber="Vl7IhDgsaWJH";
-	var show_menubar_default=false; //hide bar by default 
+	var show_menubar_default=false; //hide bar by default
 	</script>
-	
+
 
   <!-- Hack to avoid flash of unstyled content in IE -->
   <script> </script>
 </head>
 <body id="onecolumn">
-	
-	<link type="text/css" rel="stylesheet" href="yui/treeview/assets/tree.css" /> 
 
-	<script src="yui/yahoo/yahoo-min.js" ></script> 
-	<script src="yui/event/event-min.js" ></script> 
-	<script src="yui/yahoo-dom-event/yahoo-dom-event.js"></script> 
+	<link type="text/css" rel="stylesheet" href="yui/treeview/assets/tree.css" />
+
+	<script src="yui/yahoo/yahoo-min.js" ></script>
+	<script src="yui/event/event-min.js" ></script>
+	<script src="yui/yahoo-dom-event/yahoo-dom-event.js"></script>
 	<script src="yui/treeview/treeview-min.js" ></script>
 	<script src="yui/animation/animation-min.js"></script>
 
@@ -146,7 +146,7 @@ body {
           <div class="content-item">
             <div id='g_body'>The following tree lets you navigate through Olivier Gourment's roles and mandates:<br/><br/>
               <div id="treeDiv">
-              	
+
               </div>
 			<br/>
 <!--
@@ -161,9 +161,7 @@ body {
       <div id="footer"><div class="wrapper">
         <hr />
         <div id='g_footer'>
-		  <script type="text/javascript" src="http://download.skype.com/share/skypebuttons/js/skypeCheck.js"></script>
-          <script language="javascript">uZuFcMjAqEltCXC();</script> | Cell.: 514-692-2525 | 224 rue Roy Est, Montreal, Qc, Canada | Skype: <a href="skype:ogourment?call" onclick="return skypeCheck();">call me</a>
-        </div>
+          <span> LinkedIn: <a href="https://www.linkedin.com/in/ogourment/" /></span>
         <div style="clear: both"></div>
 
       </div></div>
@@ -179,9 +177,9 @@ function treeInit() {
 	tree = new YAHOO.widget.TreeView("treeDiv");
 	tree.setExpandAnim(YAHOO.widget.TVAnim.FADE_IN);
 	tree.setCollapseAnim(YAHOO.widget.TVAnim.FADE_OUT);
-	
+
 	var rootNode = tree.getRoot();
-	
+
 	var context, descr, tech
 
 		var adenyoNode = new YAHOO.widget.TextNode("<strong>Adenyo</strong>: Software Development Director (2010/04 - current)", rootNode, true);
@@ -335,7 +333,7 @@ function treeInit() {
 	new YAHOO.widget.HTMLNode(getHtml(context, descr, tech), soceafNode, false, false);
 
 
-	
+
 	tree.draw();
 }
 
@@ -346,7 +344,7 @@ function getHtml(intro, contents, tech) {
   if (contents) { html += '<br/>' }
   html += '<i>' + tech + '</i>'
   var id = "htmlnode_" + counter++;
-  return '<div id="' + id + '"' + 
+  return '<div id="' + id + '"' +
                 ' style="border:1px solid #aaaaaa; ' +
                 ' position:relative; ' +
                 ' width:600px; ' +
